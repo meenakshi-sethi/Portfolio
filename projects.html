@@ -1,30 +1,188 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Meenakshi Sethi - Projects</title>
+    <title>Projects - Meenakshi Sethi</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <style>
+        /* Styling for the project block */
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #001f3f; /* Navy blue background */
+            color: white; /* White text for visibility */
+            font-weight: bold; /* Bold text */
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .project-header h3 {
+            margin: 0; /* Removes default margin around heading */
+            color: white; /* Ensure project name is white for contrast */
+        }
+
+        /* Styling for the button inside the project header */
+        .project-header .project-link a {
+            background-color: transparent; /* No background */
+            color: white; /* White text */
+            padding: 8px 20px;
+            border: 2px solid white;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .project-header .project-link a:hover {
+            background-color: white;
+            color: #001f3f; /* Navy blue text */
+        }
+
+        .project-block p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .project-block strong {
+            font-weight: bold;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        /* Arrow styling for the back button */
+        .back-to-home {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-to-home ul {
+            list-style: none; /* Remove bullet from back button */
+            padding: 0;
+        }
+
+        .back-to-home a {
+            background-color: transparent;
+            color: #001f3f;
+            border: 2px solid #001f3f;
+            border-radius: 50px;
+            padding: 12px 30px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .back-to-home a:hover {
+            background-color: #001f3f; /* Navy background */
+            color: white; /* White text */
+        }
+
+        /* Icons styling */
+        .project-header a i, .back-to-home a i {
+            margin-right: 8px;
+        }
+
+        .back-to-home a i {
+            margin-right: 0;
+        }
+    </style>
 </head>
-<body>
-    <div id="wrapper">
-        <!-- Projects -->
-        <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+<body class="is-preload">
+    <div id="wrapper" class="divided">
+        <!-- Projects Section -->
+        <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="projects">
             <div class="content">
                 <h2>My Projects</h2>
-                <ul>
-                    <li><strong>Walmart Sales Analysis | MySQL:</strong> Extracted insights to enhance product strategy, customer behavior analysis, and operational efficiency. Processed and cleaned 1,000 records and 16 features, added time-based features, and conducted analysis using aggregate functions and CASE statements. The insights revealed "Food and beverages" as the top revenue generator, Branch C as the most profitable, and cash as the dominant payment method, providing a solid foundation for optimizing inventory, marketing strategies, and resource allocation.</li>
-                    <li><strong>Diabetes Risk Prediction | Python:</strong> Built a predictive model to identify high-risk diabetic patients for early intervention. Processed 253,000+ records, performed statistical analysis, addressed class imbalance, conducted feature engineering, and implemented machine learning models (Logistic Regression, XGBoost) with cross-validation. Selected Logistic Regression (71.26% accuracy, 74.28% recall) over XGBoost (85.76% accuracy, 11.72% recall) to prioritize recall and reduce false negatives, ensuring better detection of at-risk patients.</li>
-                    <li><strong>RSVP Movies - Movie Data Analysis | SQL:</strong> Analyzed movie data, identified top genres, and recommended leading production houses, high-rating movies, and popular directors to boost revenue.</li>
-                    <li><strong>Housing Price Prediction | Python:</strong> Built a 91% accurate linear regression model using Scikit-learn. Conducted EDA and feature engineering to identify key factors for property valuation and pricing.</li>
-                    <li><strong>OTT Platform Analysis | Enginius:</strong> Utilized marketing analytics software for user segmentation and competitive positioning, concluding that genre-based differentiation might not optimize OTT platform strategies.</li>
+
+                <!-- Project Block 1 -->
+                <div class="project-block">
+                    <div class="project-header">
+                        <h3>Diabetes Risk Prediction</h3>
+                        <div class="project-link">
+                            <a href="https://github.com/meenakshi-sethi/ML-Project-Portfolio/tree/main/Diabetes_risk_prediction" target="_blank"><i class="fas fa-eye"></i> View Project Details</a>
+                        </div>
+                    </div>
+                    <p>Tech Stack: <strong>Python, Pandas, Numpy, Scikit-learn</strong></p>
+                    <ul>
+                        <li><strong>Objective:</strong> Developed a predictive model to identify high-risk diabetic patients for early intervention.</li>
+                        <li><strong>Data Preparation:</strong> Processed over 253,000 BRFSS records, focusing on data cleaning, balancing using class weight, and scaling.</li>
+                        <li><strong>Modeling:</strong> Implemented Logistic Regression, Random Forest, and XGBoost models with feature selection techniques (correlation matrix, Chi-square test, variance inflation factor) and cross-validation.</li>
+                        <li><strong>Outcome:</strong> Chose Logistic Regression (71.26% accuracy, 74.28% recall) over XGBoost (85.76% accuracy, 11.72% recall) to prioritize recall, reducing false negatives and enhancing the detection of at-risk patients.</li>
                     </ul>
-                <ul class="actions stacked">
-                    <li><a href="https://github.com/meenakshi-sethi" class="button" target="_blank">View More on GitHub</a></li>
-                </ul>
-            </div>
-            <div class="image">
-                <img src="images/projects.jpg" alt="Projects Image" />
+                </div>
+
+                <!-- Project Block 2 -->
+                <div class="project-block">
+                    <div class="project-header">
+                        <h3>Impact of COVID19 on Hygiene Habits</h3>
+                        <div class="project-link">
+                            <a href="https://github.com/meenakshi-sethi/Research_Projects/tree/main/Impact_of_COVID-19_on_Hygiene_Habits" target="_blank"><i class="fas fa-eye"></i> View Project Details</a>
+                        </div>
+                    </div>
+                    <p>Tech Stack: <strong>Python, Statistical Analysis & Hypothesis testing</strong></p>
+                    <ul>
+                        <li><strong>Objective:</strong> Investigated the shifts in consumer hygiene behaviors and spending patterns due to the COVID19 pandemic.</li>
+                        <li><strong>Data Preparation:</strong> Processed 122 survey responses, analyzing demographic factors, hygiene practices, and changes in spending.</li>
+                        <li><strong>Analysis:</strong> Employed hypothesis testing, MANOVA, and Chi-squared tests to uncover significant behavioral differences across age groups and demographics.</li>
+                        <li><strong>Outcome:</strong> Identified a significant increase in hygiene awareness and product usage post-pandemic, with variations influenced by age and employment status.</li>
+                    </ul>
+                </div>
+
+                <!-- Project Block 3 -->
+                <div class="project-block">
+                    <div class="project-header">
+                        <h3>Walmart Sales Analysis</h3>
+                        <div class="project-link">
+                            <a href="https://github.com/meenakshi-sethi/My_SQL_Projects/tree/main/Walmart_sales_analysis" target="_blank"><i class="fas fa-eye"></i> View Project Details</a>
+                        </div>
+                    </div>
+                    <p>Tech Stack: <strong>MySQL (Aggregate functions & CASE statements)</strong></p>
+                    <ul>
+                        <li><strong>Objective:</strong> Extracted insights to improve product strategy, understand customer behavior, and enhance operational efficiency.</li>
+                        <li><strong>Data Preparation:</strong> Processed and cleaned 1,000 records across 16 features, added time-based features, and conducted analysis using aggregate functions and CASE statements.</li>
+                        <li><strong>Outcome:</strong> Identified "Food and beverages" as the top revenue generator, Branch C as the most profitable, and cash as the leading payment method.</li>
+                    </ul>
+                </div>
+
+                <!-- Project Block 4 -->
+                <div class="project-block">
+                    <div class="project-header">
+                        <h3>Twitter Influencer Engagement Analysis</h3>
+                        <div class="project-link">
+                            <a href="https://github.com/meenakshi-sethi/Visualisation_Projects/tree/main/Twitter_Engagement_Analysis" target="_blank"><i class="fas fa-eye"></i> View Project Details</a>
+                        </div>
+                    </div>
+                    <p>Tech Stack: <strong>Tableau</strong></p>
+                    <ul>
+                        <li><strong>Objective:</strong> To see if there is any relationship between tweet timing and engagement to optimize influencer content strategies.</li>
+                        <li><strong>Data:</strong> Analyzed Twitter data (Feb-May 2022) with 24,000+ tweets, 4,000 profiles, and engagement metrics like retweets, likes, and follower growth.</li>
+                        <li><strong>Key Findings:</strong> Peak engagement occurred between 12 PM-2 PM and 7 PM-9 PM, with the highest activity on Monday and Friday.</li>
+                    </ul>
+                </div>
+
+                <!-- Other Projects Section -->
+                <div class="project-block">
+                    <div class="project-header">
+                        <h3>Other Projects</h3>
+                    </div>
+                    <ul>
+                        <li><strong>RSVP Movies - Movie Data Analysis | SQL:</strong> Analyzed movie data, identified top genres, and recommended leading production houses, high-rating movies, and popular directors to boost revenue.</li>
+                        <li><strong>OTT Platform Analysis | Enginius:</strong> Utilized marketing analytics software for user segmentation and competitive positioning, concluding that genre-based differentiation might not optimize OTT platform strategies.</li>
+                    </ul>
+                </div>
+
+                <!-- Back to Front Page Button (Arrow) -->
+                <div class="back-to-home">
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </section>
 
